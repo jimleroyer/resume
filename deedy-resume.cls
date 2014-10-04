@@ -48,6 +48,36 @@ Last Updated on \today % Last Updated text
 \end{textblock}}
 
 %----------------------------------------------------------------------------------------
+%	QR LINK
+%----------------------------------------------------------------------------------------
+
+\usepackage{graphicx}
+\usepackage{textpos}
+
+\newcommand{\photo}[2][1=caption,usedefault]{\def\@photocaption{#2}\def\@photo{
+	\begin{figure}[ht!]
+	\left
+	\includegraphics{#2}
+	\caption{#1 \label{overflow}}
+	\end{figure}
+}}% the 1st (optional) argument is the width of the photo, the 2nd (optional) argument is the thickness of the frame around it.
+
+\newcommand{\cfigure}[2]{
+    \begin{figure}[ht!]
+     \raggedright
+     \includegraphics{#2}
+      \label{#1}
+    \end{figure}
+}
+
+\newcommand{\qrcode}[4]{
+    \begin{textblock}{20}(#3,#4)
+     \includegraphics{#2}
+      \label{#1}
+    \end{textblock}
+}
+
+%----------------------------------------------------------------------------------------
 %	MAIN HEADING COMMAND
 %----------------------------------------------------------------------------------------
 
