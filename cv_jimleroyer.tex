@@ -1,3 +1,5 @@
+% !TEX program = xelatex
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Deedy CV/Resume
 % XeLaTeX Template
@@ -27,8 +29,7 @@
 %	TITLE SECTION
 %----------------------------------------------------------------------------------------
 
-\lastupdated % Print the Last Updated text at the top right
-\qrcode{QRLink}{qrcode.png}{3}{3}
+\qrcode{QRLink}{qrcode-avatar.png}{0.185}{3}{3}
 \namesection{Jimmy}{Royer}{ % Your name
 	\urlstyle{same}\url{http://ca.linkedin.com/in/jimleroyer/} \\ % Your website, LinkedIn profile or other web address
 	\href{mailto:jimleroyer@gmail.com}{jimleroyer@gmail.com} | 514.730.1635 % Your contact information
@@ -44,12 +45,12 @@
 % Links
 %------------------------------------------------
 
-\section{Links} 
+\section{Links}
 
-Github:// \href{https://github.com/jimleroyer/}{\bf jimleroyer} \\
+GitHub:// \href{https://github.com/jimleroyer/}{\bf jimleroyer} \\
 LinkedIn:// \href{https://ca.linkedin.com/in/jimleroyer/}{\bf Jimmy Royer} \\
 Twitter:// \href{https://twitter.com/jimleroyer}{\bf @jimleroyer} \\
-Blog:// \href{http://jimleroyer.wordpress.com/}{\bf jimleroyer}
+Wordpress:// \href{http://jimleroyer.wordpress.com/}{\bf jimleroyer}
 
 \sectionspace % Some whitespace after the section
 
@@ -67,39 +68,44 @@ English \textbullet{} French
 
 \subsection{Programming}
 
-\location{Expert}
-Java \textbullet{} Python \\
-\location{Proficient}
-Scala \textbullet{} Javascript \textbullet bash/ksh \textbullet{} SQL \\
-bash/ksh \textbullet{} HTML5 \textbullet{} PL/SQL \\
-\location{Prior Experience}
-Prolog \textbullet{} R \textbullet{} Haskell \textbullet{} \LaTeX\
+\category{Expert}
+Java \textbullet{} TypeScript \textbullet{} Scala \\
+\category{Proficient}
+Kotlin \textbullet{} Rust \textbullet{} Python 2 \\
+Javascript \textbullet{} R \textbullet{} SQL \\ 
+HTML5 \textbullet{} CSS \textbullet{} PL/SQL \\
+bash/ksh \\ 
+\category{Prior Experience}
+Prolog \textbullet{} Haskell \textbullet{} \LaTeX\
 
 \sectionspace % Some whitespace after the section
 
 \subsection{Libs \& Frameworks}
 
-Play \textbullet{} AngularJS \textbullet{} RequireJS \\
-Akka \textbullet{} Spring \textbullet{} Eclipse PDE \\
-GWT \textbullet{} underscorejs \textbullet{} bootstrap \\
-jquery \textbullet{} JAX-RS
+AWS \textbullet{} Scalatra \textbullet{} Akka \textbullet{} Spring \\
+AngularJS \textbullet{} lodash \textbullet{} jquery \\
+dplyr \textbullet{} tidyr \textbullet{} ggplot2 \textbullet{} purr
 
 \sectionspace % Some whitespace after the section
 
 \subsection{Tools}
 
-Eclipse \textbullet{} IntelliJ IDEA \\
-Maven \textbullet{} SBT \textbullet{} Ant \\
-Git \textbullet{} Perforce \textbullet{} Subversion \\
-TeamCity \textbullet{} Hudson \\
-Jira \textbullet{} Confluence \textbullet{} bitbucket \\
-Oracle \textbullet{} MariaDB \\
-Amazon Web Services \textbullet{} Pivotal CF
+VSCode \textbullet{} IntelliJ \textbullet{} Docker \\
+Maven \textbullet{} SBT \textbullet{} Git \\
+Trello \textbullet{} Jira \textbullet{} Oracle \\
+S3 \textbullet{} Aurora \textbullet{} VPC \textbullet{} ECS \textbullet{} EC2
 
 \sectionspace % Some whitespace after the section
 
-\subsection{Processes}
-SCRUM \textbullet{} Kanban \textbullet{} Agile
+%------------------------------------------------
+% Teaching
+%------------------------------------------------
+
+\section{Teaching}
+
+Typescript Workshop \textbullet{} Code Retreat \\
+OOP \& Functional Programming \\
+Data Analysis
 
 \sectionspace % Some whitespace after the section
 
@@ -109,22 +115,29 @@ SCRUM \textbullet{} Kanban \textbullet{} Agile
 
 \section{Education} 
 
-\subsection{Cégep Limoilou}
+\subsection{College Limoilou}
 
-\descript{DEC in Software Development}
-\location{June 2003 | Quebec, PQ \\ Formule ATE}
+\descript{Software Development}
+\location{June 2003 | Quebec, CA}
 
 \sectionspace % Some whitespace after the section
 
 %------------------------------------------------
-% Groups
+% Social
 %------------------------------------------------
 
-\section{Meeting Groups}
+\section{Social}
 
-DevOps \textbullet{} Python \textbullet{} Data \\
-Scala \textbullet{} Java User Group \\
-Visualization \textbullet{} Semantic Web
+\subsection{Open Source}
+
+\href{https://starship.rs/}{\bf starship} \\
+
+\sectionspace % Some whitespace after the section
+
+\subsection{Meeting Groups}
+
+Lambda Montreal \textbullet{} R Users \\
+Python \textbullet{} Java User Group
 
 \sectionspace % Some whitespace after the section
 
@@ -145,14 +158,28 @@ Visualization \textbullet{} Semantic Web
 
 \section{Experience}
 
-\runsubsection{DeploymentNow}
-\descript{| Software Developer Consultant}
+\runsubsection{Expedia}
+\descript{Software Developer II}
 
-\location{January 2014 – September 2014 | Remote Work from Montreal}
+\location{October 2014 – May 2020}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightitemize}
+\item Generate millions of gross profits within multi-item trip with traffic generation initiative.
+\item Push forward innovation within Expedia with an internal platform for Hackathon projects.
+\item Improve Expedia content with a travel tips repository built from scratch.
+\item Run data analysis on Expedia landing page users for classification.
+\item Increase SEO ranking and traffic on landing pages with migration and coach team on dev best practices.
+\end{tightitemize}
+
+\sectionspace % Some whitespace after the section
+
+\runsubsection{DeploymentNow}
+\descript{Software Developer Consultant}
+
+\location{January 2014 – September 2014 | Remote Work}
+\begin{tightitemize}
 \item Implement a deployment lifecycle and authorization software for BI artifacts from start to end.
-\item Drive the technological choices for both back (Scala, Play) and front ends (AngularJS).
+\item Drive the technological choices for both back and front ends (Scala and AngularJS).
 \item Configure and deploy to the cloud environment.
 \item Contribute to the architectural design.
 \end{tightitemize}
@@ -162,9 +189,9 @@ Visualization \textbullet{} Semantic Web
 %------------------------------------------------
 
 \runsubsection{ModelSolv}
-\descript{| Software Developer Consultant}
+\descript{Software Developer Consultant}
 
-\location{October 2011 – September 2014 | Remote Work from Montreal}
+\location{October 2011 – September 2014 | Remote Work}
 \begin{tightitemize}
 \item Responsible for client's environment integration.
 \item Develop Eclipse plug-ins around a web service modeling tool called RepreZen.
@@ -178,7 +205,7 @@ Visualization \textbullet{} Semantic Web
 %------------------------------------------------
 
 \runsubsection{Morgan Stanley}
-\descript{| Software Developer}
+\descript{Software Developer}
 
 \location{May 2008 – October 2011 | Montreal, Quebec}
 \begin{tightitemize}
@@ -193,28 +220,18 @@ Visualization \textbullet{} Semantic Web
 %------------------------------------------------
 
 \runsubsection{Compuware}
-\descript{| Developer System}
+\descript{Developer System}
 
 \location{August 2006 – April 2008 | Montreal, Quebec}
-\begin{tightitemize}
-\item Develop the Java runtime of the MODeX engine, a scalable cross-language services development tool.
-\item Supervise interns for prototypical projects.
-\item Refactor the schemas for the in-house transaction message definition.
-\end{tightitemize}
 
 \sectionspace % Some whitespace after the section
 
 %------------------------------------------------
 
 \runsubsection{eVision}
-\descript{| Programmer}
+\descript{Programmer}
 
 \location{July 2004 – August 2006 | Quebec, Quebec}
-\begin{tightitemize}
-\item Fix and improve the existing research grants application used by the Quebec government.
-\item Write and improve SQL queries for the Oracle back-end.
-\item Rewrite the research grants application in Java and support the team through the language switch transition.
-\end{tightitemize}
 
 \sectionspace % Some whitespace after the section
 
@@ -222,14 +239,17 @@ Visualization \textbullet{} Semantic Web
 % Certifications
 %------------------------------------------------
 
-\section{Certifications} 
+\section{Certifications}
 
 \begin{tabular}{rll}
-2014 & \href{https://www.linkedin.com/redir/redirect?url=https%3A%2F%2Fwww%2Ecoursera%2Eorg%2Fsignature%2Fcertificate%2FCKRUBZNHR9&urlhash=kGuK&trk=profile_certification_company_title}{Functional Programming Principles in Scala} \\
-2014 & Data Analysis (from the John Hopkins Hospiral @ Coursera) \\
+	2018 & \href{https://www.coursera.org/account/accomplishments/verify/S3UGZPCKZ8LJ}{Reproducible Research} \\
+	2016 & \href{https://www.coursera.org/account/accomplishments/verify/67MDDEUHCDET}{Exploratory Data Analysis} \\
+	2015 & \href{https://www.coursera.org/account/accomplishments/verify/WEJXAN6VWQ}{Principles of Reactive Programming} \\
+	2014 & \href{https://www.coursera.org/account/accomplishments/certificate/CKRUBZNHR9}{Functional Programming Principles in Scala} \\
+	2014 & Data Analysis (from the John Hopkins Hospital @ Coursera) \\
 \end{tabular}
 
-\sectionspace % Some whitespace after the section
+% \sectionspace % Some whitespace after the section
 
 %----------------------------------------------------------------------------------------
 

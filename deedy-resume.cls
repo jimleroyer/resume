@@ -20,6 +20,7 @@
 \definecolor{primary}{HTML}{2b2b2b} % The primary document color for content text
 \definecolor{headings}{HTML}{6A6A6A} % The color of the large sections
 \definecolor{subheadings}{HTML}{333333} % The color of subsections and places worked/studied
+\definecolor{categories}{HTML}{7d7d7d} % The color of categories.
 \definecolor{date}{HTML}{666666} % The color used for the Last Updated text at the top right
 
 %----------------------------------------------------------------------------------------
@@ -36,13 +37,14 @@
 %	LAST UPDATED COMMAND
 %----------------------------------------------------------------------------------------
 
+% \usepackage{datetime2}
 \usepackage[absolute]{textpos} % Required for positioning the Last Updated text at the top right of the page
 \usepackage[UKenglish]{isodate} % Prints the Last Updated date in UK English format
 
 \setlength{\TPHorizModule}{0.01\paperwidth} % Sets the units for the horizontal position used in the \begin{textblock} argument
 \setlength{\TPVertModule}{0.01\paperwidth} % Sets the units for the vertical position used in the \begin{textblock} argument
 \newcommand{\lastupdated}{ % Create a new command for printing the Last Updated text
-\begin{textblock}{25}(75,2) % The position of the Last Updated text on the page (75% of the page across, 2% down)
+\begin{textblock}{25}(75,13) % The position of the Last Updated text on the page (75% of the page across, 2% down)
 \color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont % Text styling of the text
 Last Updated on \today % Last Updated text
 \end{textblock}}
@@ -54,9 +56,9 @@ Last Updated on \today % Last Updated text
 \usepackage{graphicx}
 \usepackage{textpos}
 
-\newcommand{\qrcode}[4]{
-    \begin{textblock}{20}(#3,#4)
-     \includegraphics{#2}
+\newcommand{\qrcode}[5]{
+    \begin{textblock}{20}(#4,#5)
+     \includegraphics[scale=#3]{#2}
       \label{#1}
     \end{textblock}
 }
@@ -102,6 +104,9 @@ Last Updated on \today % Last Updated text
 
 \newcommand{\location}[1]{ % Used for specifying a duration and/or location under a subsection
 \color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{12pt}\selectfont {#1\\} \normalfont}
+
+\newcommand{\category}[1]{ % Used for specifying a category under a subsection
+\color{categories}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-ExtraBold}\fontsize{9pt}{11pt}\selectfont {#1\\} \normalfont}
 
 %----------------------------------------------------------------------------------------
 %	SECTION TITLE STYLING AND SPACING
